@@ -33,12 +33,12 @@ lottie_email = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_q2Q
 
 # ---- HEADER SECTION ----
 with st.container():
-    st.subheader("Fledge Grinds")
-    st.title("Take flight with Fledge Grinds")
+    st.subheader("Fledge Grinds Academy")
+    st.title("Giving you the edge over your peers!")
     st.write(
         "We offer personalized, expert tutoring in a variety of subjects to help students achieve their academic goals. Each of our tutors in each subject has achieved a H1 in the subject at leaving cert level, to ensure you receive the best possible service.")
 
-# ---- WHAT I DO ----
+# ---- WHAT WE DO ----
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
@@ -56,11 +56,10 @@ with st.container():
             to succeed in your Leaving cert.
             """
         )
-        # st.write("[YouTube Channel >](https://youtube.com/c/CodingIsFun)")
     with right_column:
         st_lottie(lottie_coding, height=300, key="coding")
 
-# ---- PROJECTS ----
+# ---- Why Us ----
 with st.container():
     st.write("---")
     st.header("Why Choose Us?")
@@ -100,7 +99,7 @@ with st.container():
         st.subheader("Convenient learning environment:")
         st.write(
             """
-             With Fledge Grinds, students have the ability to learn from the comfort of their own home. 
+             With Fledge Grinds Academy, students have the ability to learn from the comfort of their own home. 
              This makes it easier for students to fit tutoring into their busy schedules and eliminates 
              the need for transportation. Additionally, our online platform 
              allows for easy communication and scheduling with tutors, 
@@ -114,9 +113,9 @@ with st.container():
     st.header("Get In Touch With Us!")
     st.write("##")
 
-    # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
+    
     contact_form = """
-    <form action="https://formsubmit.co/discord.1yaul@simplelogin.fr" method="POST">
+    <form action="https://formsubmit.co/7272fc785a51c2d5ae0c8c761e91e8aa" method="POST">
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="name" placeholder="Your name" required>
         <input type="email" name="email" placeholder="Your email" required>
