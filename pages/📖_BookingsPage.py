@@ -1,4 +1,3 @@
-
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
@@ -28,7 +27,6 @@ for days in range(14):
 
 
 
-# Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="Book service", page_icon=":tada:", layout="wide")
 
 
@@ -53,22 +51,32 @@ with st.container():
     with image_column:
         st_lottie(lottie_booking,height=300)
 
+# Use local CSS
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+
+local_css("style.css")
+
+
 with st.container():
     st.write("---")
     st.header("Booking Selection:")
     st.write("##")
-    subject_list = ['Select Subject','Maths','Physics','Technology']
-    resultSubject = st.selectbox("Select Your Subject For Grinds",subject_list)
 
-    level_list = ['Select Level','Higher Level','Ordinary Level']
-    resultLevel = st.selectbox("Select Your Level",level_list)
 
-    date_list = ['Select Date',availableDates[0],availableDates[1],availableDates[2],availableDates[3],availableDates[4],availableDates[5],availableDates[6],
-    availableDates[7],availableDates[8],availableDates[9],availableDates[10],availableDates[11],availableDates[12],availableDates[13]]
-    resultLevel = st.selectbox("Select Your Date",date_list)
-
-    time_list = ['Select Time',times[0],times[1],times[2],times[3],times[4],times[5],times[6],
-    times[7],times[8],times[9],times[10],times[11]]
-    resultLevel = st.selectbox("Select Your Time",time_list)
-
+    contact_form = """
+    <form action="https://formsubmit.co/discord.1yaul@simplelogin.fr" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <input type="text" name="level" placeholder="Subject level" required>
+        <input type="date" name="date" placeholder="Date" required>
+        <input type="time" name="time" placeholder="Time" required>
+        <button type="submit">Send</button>
+    </form>
+    """
+    st.markdown(contact_form, unsafe_allow_html=True)
     
