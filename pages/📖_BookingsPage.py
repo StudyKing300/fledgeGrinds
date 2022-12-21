@@ -67,7 +67,7 @@ with st.container():
 
 
     contact_form = """
-    <form action="https://formsubmit.co/discord.1yaul@simplelogin.fr" method="POST">
+    <form action="https://formsubmit.co/7272fc785a51c2d5ae0c8c761e91e8aa" method="POST">
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="name" placeholder="Your name" required>
         <input type="email" name="email" placeholder="Your email" required>
