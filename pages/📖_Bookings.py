@@ -6,30 +6,8 @@ from datetime import date
 import datetime
 
 
-months = {1:"January",2:"February",3:"March",4:"April",5:"May",6:"June",7:"July",8:"August",
-9:"September",10:"October",11:"November",12:"December"}
-
-times = ["9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00"]
-
-
-
-
-availableDates = []
-
-for days in range(14):
-    tomorrowDay = (datetime.datetime.now() + datetime.timedelta(days)).day
-    tomorrowMonth = months[(datetime.datetime.now() + datetime.timedelta(days)).month]
-
-    tomorrow = str(tomorrowDay) + " " + tomorrowMonth
-
-    availableDates.append(tomorrow)
-
-
-
 
 st.set_page_config(page_title="Book service", page_icon=":tada:", layout="wide")
-
-
 
 
 def load_lottieurl(url):
