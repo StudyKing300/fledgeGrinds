@@ -75,6 +75,7 @@ with st.container():
         <input type="text" name="level" placeholder="Subject level" required>
         <input type="date" name="date" placeholder="Date" required>
         <input type="time" name="time" placeholder="Time" required>
+        <textarea name="message" placeholder="Your code here" required></textarea>
         <button type="submit">Send</button>
     </form>
     """
