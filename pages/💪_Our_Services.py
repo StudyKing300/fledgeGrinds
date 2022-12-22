@@ -70,7 +70,7 @@ with st.container():
 with st.container():
     st.write("---")
     st.write("##")
-    image_column, text_column = st.columns((2, 1))
+    text_column,image_column = st.columns((2, 1))
     
     with text_column:
         st.subheader("Video Calling")
@@ -84,7 +84,8 @@ with st.container():
             convenient for both students and tutors.
             """
         )
-     with image_column:
+        
+    with image_column:
         st_lottie(lottie_flexible,height=300)
         
 with st.container():
